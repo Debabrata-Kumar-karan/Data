@@ -1,0 +1,779 @@
+{
+  "defaultProfileConfiguration": {
+    "datasetConfiguration": {
+      "includedStatistics": [
+        "DUPLICATE_ROWS_COUNT",
+        "CORRELATION"
+      ],
+      "parameters": {
+        "CORRELATION": {
+          "columnNumber": "10"
+        }
+      }
+    },
+    "columnConfiguration": {
+      "booleanColumn": {
+        "includedStatistics": [
+          "MISSING_VALUES_COUNT",
+          "MOST_COMMON_VALUES",
+          "UNIQUE_VALUES_COUNT",
+          "DISTINCT_VALUES_COUNT",
+          "ENTROPY"
+        ],
+        "parameters": {
+          "MOST_COMMON_VALUES": {
+            "sampleSize": "50"
+          }
+        }
+      },
+      "stringColumn": {
+        "includedStatistics": [
+          "VALUE_DISTRIBUTION",
+          "MISSING_VALUES_COUNT",
+          "MOST_COMMON_VALUES",
+          "MODE",
+          "MEDIAN",
+          "MIN",
+          "UNIQUE_VALUES_COUNT",
+          "OUTLIER_DETECTION",
+          "DISTINCT_VALUES_COUNT",
+          "ENTROPY",
+          "MEAN",
+          "STANDARD_DEVIATION",
+          "MAX"
+        ],
+        "parameters": {
+          "MOST_COMMON_VALUES": {
+            "sampleSize": "50"
+          },
+          "OUTLIER_DETECTION": {
+            "threshold": "3",
+            "sampleSize": "50"
+          },
+          "VALUE_DISTRIBUTION": {
+            "binNumber": "20"
+          }
+        }
+      },
+      "numericColumn": {
+        "includedStatistics": [
+          "MINIMUM_VALUES",
+          "OUTLIER_DETECTION",
+          "SUM",
+          "VARIANCE",
+          "KURTOSIS",
+          "ZEROS_COUNT",
+          "STANDARD_DEVIATION",
+          "MOST_COMMON_VALUES",
+          "MIN",
+          "Z_SCORE_DISTRIBUTION",
+          "MEDIAN_ABSOLUTE_DEVIATION",
+          "INTER_QUARTILE_RANGE",
+          "MODE",
+          "UNIQUE_VALUES_COUNT",
+          "DISTINCT_VALUES_COUNT",
+          "MEAN",
+          "MAXIMUM_VALUES",
+          "SKEWNESS",
+          "VALUE_DISTRIBUTION",
+          "MISSING_VALUES_COUNT",
+          "MEDIAN",
+          "PERCENTILES",
+          "RANGE",
+          "ENTROPY",
+          "MAX"
+        ],
+        "parameters": {
+          "MOST_COMMON_VALUES": {
+            "sampleSize": "50"
+          },
+          "MINIMUM_VALUES": {
+            "sampleSize": "5"
+          },
+          "MAXIMUM_VALUES": {
+            "sampleSize": "5"
+          },
+          "OUTLIER_DETECTION": {
+            "threshold": "3",
+            "sampleSize": "50"
+          },
+          "VALUE_DISTRIBUTION": {
+            "binNumber": "20"
+          },
+          "Z_SCORE_DISTRIBUTION": {
+            "binNumber": "20"
+          }
+        }
+      }
+    }
+  },
+  "datasetConfigurationOverride": {},
+  "sampleSize": 100,
+  "duplicateRowsCount": 0,
+  "columns": [
+    {
+      "name": "CUST_KEY",
+      "type": "decimal(38,0)",
+      "columnConfigurationOverride": {}
+    },
+    {
+      "name": "CUST_NAME",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 100,
+      "uniqueValuesCount": 100,
+      "entropy": 4.605170185988092,
+      "mostCommonValues": [
+        {
+          "value": "Becky Kline",
+          "count": 1
+        },
+        {
+          "value": "Timothy Porter",
+          "count": 1
+        },
+        {
+          "value": "Katherine Long",
+          "count": 1
+        },
+        {
+          "value": "Michele Bailey",
+          "count": 1
+        },
+        {
+          "value": "Jessica Montgomery",
+          "count": 1
+        },
+        {
+          "value": "Allen Ramirez",
+          "count": 1
+        },
+        {
+          "value": "Danielle Morris",
+          "count": 1
+        },
+        {
+          "value": "Ryan Mcdaniel",
+          "count": 1
+        },
+        {
+          "value": "Curtis Sullivan",
+          "count": 1
+        },
+        {
+          "value": "Brian Harvey",
+          "count": 1
+        },
+        {
+          "value": "Jordan Brock",
+          "count": 1
+        },
+        {
+          "value": "Kristen Johnston",
+          "count": 1
+        },
+        {
+          "value": "Luis Ramirez",
+          "count": 1
+        },
+        {
+          "value": "Travis Gallagher",
+          "count": 1
+        },
+        {
+          "value": "Brandy Garza",
+          "count": 1
+        },
+        {
+          "value": "Mary Cunningham",
+          "count": 1
+        },
+        {
+          "value": "Jennifer Simmons",
+          "count": 1
+        },
+        {
+          "value": "Connor Hayden",
+          "count": 1
+        },
+        {
+          "value": "Ashley Sexton",
+          "count": 1
+        },
+        {
+          "value": "Tammy Charles",
+          "count": 1
+        },
+        {
+          "value": "Clifford Bishop",
+          "count": 1
+        },
+        {
+          "value": "Catherine Burgess",
+          "count": 1
+        },
+        {
+          "value": "Bryan Carpenter",
+          "count": 1
+        },
+        {
+          "value": "Stephanie Morton",
+          "count": 1
+        },
+        {
+          "value": "Abigail Brown",
+          "count": 1
+        },
+        {
+          "value": "Jennifer Murphy",
+          "count": 1
+        },
+        {
+          "value": "Bridget Hughes",
+          "count": 1
+        },
+        {
+          "value": "Stephanie Walker",
+          "count": 1
+        },
+        {
+          "value": "John Richard",
+          "count": 1
+        },
+        {
+          "value": "Judith Ochoa",
+          "count": 1
+        },
+        {
+          "value": "Gregg Alexander",
+          "count": 1
+        },
+        {
+          "value": "Deborah Pruitt",
+          "count": 1
+        },
+        {
+          "value": "Steven Beasley",
+          "count": 1
+        },
+        {
+          "value": "Julia Brown",
+          "count": 1
+        },
+        {
+          "value": "Brandon Parker DVM",
+          "count": 1
+        },
+        {
+          "value": "Anita Stein",
+          "count": 1
+        },
+        {
+          "value": "Katherine Garcia",
+          "count": 1
+        },
+        {
+          "value": "Nicole Hernandez",
+          "count": 1
+        },
+        {
+          "value": "Jeremy Barrett",
+          "count": 1
+        },
+        {
+          "value": "Sheri Hernandez",
+          "count": 1
+        },
+        {
+          "value": "Stephanie Gray",
+          "count": 1
+        },
+        {
+          "value": "Jacob Chaney",
+          "count": 1
+        },
+        {
+          "value": "Suzanne Nash",
+          "count": 1
+        },
+        {
+          "value": "James Hill",
+          "count": 1
+        },
+        {
+          "value": "Cody Hansen",
+          "count": 1
+        },
+        {
+          "value": "Tammy Kidd",
+          "count": 1
+        },
+        {
+          "value": "Brandi Collins",
+          "count": 1
+        },
+        {
+          "value": "James Barnes",
+          "count": 1
+        },
+        {
+          "value": "Larry Mcgee",
+          "count": 1
+        },
+        {
+          "value": "Brandon Boone",
+          "count": 1
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 19,
+      "mean": 13.31,
+      "min": 8,
+      "standardDeviation": 2.223360819420306,
+      "median": 13.0,
+      "mode": 14,
+      "valueDistribution": [
+        {
+          "bucket": [
+            8,
+            9
+          ],
+          "count": 1
+        },
+        {
+          "bucket": [
+            9,
+            10
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            10,
+            11
+          ],
+          "count": 10
+        },
+        {
+          "bucket": [
+            11,
+            12
+          ],
+          "count": 12
+        },
+        {
+          "bucket": [
+            12,
+            13
+          ],
+          "count": 16
+        },
+        {
+          "bucket": [
+            13,
+            14
+          ],
+          "count": 14
+        },
+        {
+          "bucket": [
+            14,
+            15
+          ],
+          "count": 17
+        },
+        {
+          "bucket": [
+            15,
+            16
+          ],
+          "count": 12
+        },
+        {
+          "bucket": [
+            16,
+            17
+          ],
+          "count": 13
+        },
+        {
+          "bucket": [
+            17,
+            18
+          ],
+          "count": 1
+        },
+        {
+          "bucket": [
+            18,
+            19
+          ],
+          "count": 2
+        },
+        {
+          "bucket": [
+            19,
+            "inf"
+          ],
+          "count": 2
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": []
+    },
+    {
+      "name": "CUST_AGE",
+      "type": "decimal(38,0)",
+      "columnConfigurationOverride": {}
+    },
+    {
+      "name": "CUST_SEX",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 2,
+      "uniqueValuesCount": 0,
+      "entropy": 0.6881388137135884,
+      "mostCommonValues": [
+        {
+          "value": "F",
+          "count": 55
+        },
+        {
+          "value": "M",
+          "count": 45
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 1,
+      "mean": 1.0,
+      "min": 1,
+      "standardDeviation": 0.0,
+      "median": 1.0,
+      "mode": 1,
+      "valueDistribution": [
+        {
+          "bucket": [
+            1.0,
+            1.0
+          ],
+          "count": 100
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": []
+    },
+    {
+      "name": "CUST_CITY",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 19,
+      "uniqueValuesCount": 0,
+      "entropy": 2.875013714486779,
+      "mostCommonValues": [
+        {
+          "value": "Pimpri",
+          "count": 11
+        },
+        {
+          "value": "Indore",
+          "count": 7
+        },
+        {
+          "value": "Mumbai",
+          "count": 7
+        },
+        {
+          "value": "Thane",
+          "count": 6
+        },
+        {
+          "value": "Vadodara",
+          "count": 6
+        },
+        {
+          "value": "Delhi",
+          "count": 6
+        },
+        {
+          "value": "Nagpur",
+          "count": 6
+        },
+        {
+          "value": "Hyderabad",
+          "count": 6
+        },
+        {
+          "value": "Visakhapatnam",
+          "count": 6
+        },
+        {
+          "value": "Bangalore",
+          "count": 5
+        },
+        {
+          "value": "Pune",
+          "count": 5
+        },
+        {
+          "value": "Patna",
+          "count": 5
+        },
+        {
+          "value": "Kanpur",
+          "count": 5
+        },
+        {
+          "value": "Surat",
+          "count": 4
+        },
+        {
+          "value": "Lucknow",
+          "count": 4
+        },
+        {
+          "value": "Bhopal",
+          "count": 4
+        },
+        {
+          "value": "Ahmedabad",
+          "count": 3
+        },
+        {
+          "value": "Jaipur",
+          "count": 2
+        },
+        {
+          "value": "Kolkata",
+          "count": 2
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 13,
+      "mean": 6.71,
+      "min": 4,
+      "standardDeviation": 2.1095980755594277,
+      "median": 6.0,
+      "mode": 6,
+      "valueDistribution": [
+        {
+          "bucket": [
+            4,
+            5
+          ],
+          "count": 5
+        },
+        {
+          "bucket": [
+            5,
+            6
+          ],
+          "count": 21
+        },
+        {
+          "bucket": [
+            6,
+            7
+          ],
+          "count": 42
+        },
+        {
+          "bucket": [
+            7,
+            8
+          ],
+          "count": 6
+        },
+        {
+          "bucket": [
+            8,
+            9
+          ],
+          "count": 6
+        },
+        {
+          "bucket": [
+            9,
+            10
+          ],
+          "count": 14
+        },
+        {
+          "bucket": [
+            10,
+            11
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            11,
+            12
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            12,
+            13
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            13,
+            "inf"
+          ],
+          "count": 6
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": []
+    },
+    {
+      "name": "CUST_STATE",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 11,
+      "uniqueValuesCount": 0,
+      "entropy": 2.0546498731018588,
+      "mostCommonValues": [
+        {
+          "value": "Maharashtra",
+          "count": 35
+        },
+        {
+          "value": "Gujarat",
+          "count": 13
+        },
+        {
+          "value": "MP",
+          "count": 11
+        },
+        {
+          "value": "UP",
+          "count": 9
+        },
+        {
+          "value": "Telangana",
+          "count": 6
+        },
+        {
+          "value": "Delhi",
+          "count": 6
+        },
+        {
+          "value": "AP",
+          "count": 6
+        },
+        {
+          "value": "Karnataka",
+          "count": 5
+        },
+        {
+          "value": "Bihar",
+          "count": 5
+        },
+        {
+          "value": "West Bengal",
+          "count": 2
+        },
+        {
+          "value": "Rajasthan",
+          "count": 2
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 11,
+      "mean": 7.22,
+      "min": 2,
+      "standardDeviation": 3.6696406671856345,
+      "median": 8.0,
+      "mode": 11,
+      "valueDistribution": [
+        {
+          "bucket": [
+            2,
+            3
+          ],
+          "count": 26
+        },
+        {
+          "bucket": [
+            3,
+            4
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            4,
+            5
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            5,
+            6
+          ],
+          "count": 11
+        },
+        {
+          "bucket": [
+            6,
+            7
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            7,
+            8
+          ],
+          "count": 13
+        },
+        {
+          "bucket": [
+            8,
+            9
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            9,
+            10
+          ],
+          "count": 13
+        },
+        {
+          "bucket": [
+            10,
+            11
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            11,
+            "inf"
+          ],
+          "count": 37
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": []
+    },
+    {
+      "name": "CUST_ZIP",
+      "type": "decimal(38,0)",
+      "columnConfigurationOverride": {}
+    }
+  ],
+  "jobName": "customer-table profile job",
+  "jobRunId": "db_53760d37e04a875749a9afd251eed2a21335ae6f41153a873ea49639c731a1dd",
+  "location": "s3://databrew-results1/customer-table_53760d37e04a875749a9afd251eed2a21335ae6f41153a873ea49639c731a1dd.json",
+  "startedOn": "2022-05-18T10:21:51.069577",
+  "writtenOn": "2022-05-18T10:22:45.288388",
+  "version": "1.0"
+}
